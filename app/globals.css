@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.border{
+    border-radius: 12px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+Button{
+    transition:  .5s ease;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+Button:hover{
+    transform: scale(1.02);
+    background:aqua;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-gray-800{
+    color: blue;
+}
+.rounded-lg{
+    border-radius: 23px;
+    
 }
